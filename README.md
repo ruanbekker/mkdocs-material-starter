@@ -7,9 +7,9 @@ mkdocs-material-starter
 With `virtualenv`:
 
 ```bash
-virtualenv -p python3 venv
-source ./venv/bin/activate
-pip install -r requirements.txt
+$ virtualenv -p python3 venv
+$ source ./venv/bin/activate
+$ pip install -r requirements.txt
 ```
 
 ## Commands
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 To deploy to AWS S3:
 
-```
+```bash
 $ mkdocs build
 $ aws s3 sync ./site s3://<your-bucket-name> --acl public-read
 ```
