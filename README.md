@@ -17,6 +17,15 @@ pip install -r requirements.txt
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 
+## Deploy to S3
+
+To deploy to AWS S3:
+
+```
+$ mkdocs build
+$ aws s3 sync ./site s3://<your-bucket-name> --acl public-read
+```
+
 ## More information
 
 For more information please see the [index.md file](docs/index.md) inside
