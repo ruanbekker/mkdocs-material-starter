@@ -26,6 +26,8 @@ $ mkdocs build
 $ aws s3 sync ./site s3://<your-bucket-name> --acl public-read
 ```
 
+For further instructions see [their documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+
 ## More information
 
 For more information please see the [index.md file](docs/index.md) inside
